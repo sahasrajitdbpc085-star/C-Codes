@@ -1,0 +1,168 @@
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 1
+
+Enter Cereal Name: Rice
+Enter Area (acres): 25
+Enter Season (e.g., Rabi/Kharif): Kharif
+Enter Yield per Acre: 21
+Enter Fertilizer Type: NPK
+[Success] Cereal crop added successfully!
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 2
+
+Enter Vegetable Name: Carrot
+Enter Area (acres): 20
+Enter Season: Rabi
+Enter Yield per Acre: 20
+Enter Irrigation Frequency (days): 7
+[Success] Vegetable crop added successfully!
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 3
+
+----------------------------------------------------------------------------------------------------
+Crop Name      Area(Acre)   Season      Yield/Acre     Total Yield    Fertilizer          Irrigation          
+----------------------------------------------------------------------------------------------------
+Rice           25           Kharif      21             525            NPK                 N/A                 
+Carrot         20           Rabi        20             400            N/A                 7 days              
+----------------------------------------------------------------------------------------------------
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 4
+
+Registered Crops List:
+0. Rice (Total Yield: 525)
+1. Carrot (Total Yield: 400)
+Enter index of first crop: 0
+Enter index of second crop: 1
+
+Result: Rice has a higher total yield than Carrot.
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 5
+
+--- Expert Farming Advisories ---
+[Cereal Advisory - Rice]: Ensure balanced application of NPK during the tillering stage and maintain proper field drainage.
+[Vegetable Advisory - Carrot]: Irrigate every 7 day(s) and monitor closely for fungal infections.
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 6
+
+[Success] Crop data successfully saved to crop_data.txt
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 7
+
+--- Retrieved Crop Data from File (crop_data.txt) ---
+CEREAL,Rice,25,Kharif,21,NPK
+VEGETABLE,Carrot,20,Rabi,20,7
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 8
+
+Total active crops in memory: 2
+
+=============================================
+      SMART FARM MANAGEMENT SYSTEM           
+=============================================
+1. Add Cereal Crop
+2. Add Vegetable Crop
+3. Display All Crops & Total Yields
+4. Compare Two Crops by Yield
+5. Get Farming Advisories
+6. Save Crop Data to File
+7. Load Crop Data from File
+8. Show Active Crop Count
+9. Exit
+Enter your choice (1-9): 9
+
+Exiting Smart Farm Management System. Cleaning up memory...
