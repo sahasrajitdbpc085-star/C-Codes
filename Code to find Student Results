@@ -3,7 +3,6 @@
 #include <cstring>
 using namespace std;
 
-// ---------------- Base class ----------------
 class Student {
 protected:
     int  rollNo;
@@ -24,11 +23,9 @@ public:
     }
 };
 
-// ---------------- Derived class (Level 1) ----------------
-// Exam inherits Student
 class Exam : public Student {
 protected:
-    float marks[6];   // marks in 6 subjects
+    float marks[6];
 
 public:
     void getExamData() {
@@ -46,8 +43,6 @@ public:
     }
 };
 
-// ---------------- Derived class (Level 2) ----------------
-// Result inherits Exam, which inherits Student  -> MULTILEVEL INHERITANCE
 class Result : public Exam {
 private:
     float totalMarks;
@@ -59,7 +54,7 @@ private:
         for (int i = 0; i < 6; i++)
             totalMarks += marks[i];
 
-        percentage = totalMarks / 6.0f;   // 6 subjects, out of 100 each
+        percentage = totalMarks / 6.0f;
 
         if (percentage >= 90)      grade = 'A';
         else if (percentage >= 75) grade = 'B';
@@ -70,9 +65,9 @@ private:
 
 public:
     void processResult() {
-        getStudentData();   // from Student
-        getExamData();      // from Exam
-        calculateResult();  // own method
+        getStudentData(); 
+        getExamData();     
+        calculateResult(); 
     }
 
     void displayResult() {
