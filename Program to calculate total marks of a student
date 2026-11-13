@@ -2,7 +2,6 @@
 #include <cstring>
 using namespace std;
 
-// ---------------- Base class ----------------
 class Student {
 protected:
     int  rollNo;
@@ -23,11 +22,9 @@ public:
     }
 };
 
-// ---------------- Intermediate class 1 ----------------
-// "virtual" here makes Test share ONE copy of Student with other classes
 class Test : virtual public Student {
 protected:
-    float theory[3];          // marks in 3 theory subjects
+    float theory[3];          
 
 public:
     void getTestMarks() {
@@ -39,10 +36,9 @@ public:
     }
 };
 
-// ---------------- Intermediate class 2 ----------------
 class Sports : virtual public Student {
 protected:
-    float sportsMarks;        // marks in sports (out of 100)
+    float sportsMarks;       
 
 public:
     void getSportsMarks() {
@@ -51,10 +47,6 @@ public:
     }
 };
 
-// ---------------- Final derived class ----------------
-// Inherits from BOTH Test and Sports (diamond shape).
-// Without "virtual" above, Result would contain two copies of Student
-// and rollNo/name would be ambiguous.
 class Result : public Test, public Sports {
     float total;
 
@@ -64,7 +56,7 @@ public:
     }
 
     void display() {
-        showStudent();        // unambiguous: only one Student sub-object exists
+        showStudent();        
         cout << "Theory Marks : " << theory[0] << ", "
              << theory[1] << ", " << theory[2] << "\n";
         cout << "Sports Marks : " << sportsMarks << "\n";
@@ -75,9 +67,9 @@ public:
 int main() {
     Result r;
 
-    r.getStudent();       // from the single shared Student
-    r.getTestMarks();     // from Test
-    r.getSportsMarks();   // from Sports
+    r.getStudent();        
+    r.getTestMarks();     
+    r.getSportsMarks();  
     r.calculate();
 
     cout << "\n=========== RESULT ===========\n";
