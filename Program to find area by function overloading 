@@ -2,21 +2,18 @@
 #include <cmath>
 using namespace std;
 
-// Function overloading: same function name "AREA", different parameter lists
-
-// 1 argument -> Circle (radius)
 float AREA(float radius) {
     return 3.14159f * radius * radius;
 }
 
-// 2 arguments -> Rectangle (length, breadth)
+
 float AREA(float length, float breadth) {
     return length * breadth;
 }
 
-// 3 arguments -> Triangle (using Heron's formula, sides a, b, c)
+
 float AREA(float a, float b, float c) {
-    float s = (a + b + c) / 2.0f;   // semi-perimeter
+    float s = (a + b + c) / 2.0f;   
     return sqrt(s * (s - a) * (s - b) * (s - c));
 }
 
